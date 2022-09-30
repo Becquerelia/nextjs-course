@@ -1,16 +1,17 @@
-import '../styles/globals.css';
-import Head from 'next/head';
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <>
-    <Head>
-      <title>Learning NextJS</title>
-      <meta name="description" content="Creating an app for learning NextJS" />
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <header>News-App</header>
-    <Component {...pageProps} />
-  </>
+  return (
+    <>
+      <Component {...pageProps} />
+
+      <style jsx>{`
+        header {
+          padding: 20px;
+        }
+      `}</style>
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
