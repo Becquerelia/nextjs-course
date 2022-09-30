@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-function PageLayout() {
+function PageLayout({children}) {
   return (
     <>
       <Head>
@@ -16,6 +16,11 @@ function PageLayout() {
       <main>
         {children}
       </main>
+      <style jsx>{`
+        header {
+          padding: 20px;
+        }
+      `}</style>
     </>
   );
 }
