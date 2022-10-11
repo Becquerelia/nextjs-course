@@ -1,11 +1,11 @@
 import React from "react";
 import Head from "next/head";
 
-function PageLayout({children}) {
+function PageLayout({children, title }) {
   return (
     <>
       <Head>
-        <title>Learning NextJS</title>
+        <title>{title}</title>
         <meta
           name="description"
           content="Creating an app for learning NextJS"
@@ -15,12 +15,7 @@ function PageLayout({children}) {
       <header>News-App</header>
       <main>
         {children}
-      </main>
-      <style jsx>{`
-        header {
-          padding: 20px;
-        }
-      `}</style>
+      </main>      
     </>
   );
 }

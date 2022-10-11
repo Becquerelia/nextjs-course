@@ -1,8 +1,11 @@
+import PageLayout from "../components/PageLayout"
 
 
 function About() {
   return (
-    <div>Página about</div>
+    <PageLayout title={'About Section'}>
+      <h1>Esta es la sección de About</h1>
+    </PageLayout>
   )
 }
 
